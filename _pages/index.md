@@ -11,6 +11,13 @@ I received my MMath in Computer Science from the University of Waterloo, where I
 I received by BSc in Computer Science from Concordia Univsersity, where I completed software engineering internships at [Accedian](https://accedian.com/) and [Morgan Stanley](https://www.morganstanley.com/). I also completed research internships in the CLaC Lab advised by [Sabine Bergler](http://users.encs.concordia.ca/~bergler/) and at Mila advised by [Eugene Belilovsky](http://eugenium.github.io/) and [Guy Wolf](http://guywolf.org/).
 
 ## Research Publications
+<!-- Second publication with image on the right -->
+<div style="display: flex; align-items: center; flex-direction: row-reverse;">
+<img src="{{ site.baseurl }}/images/local_l2o.png" alt="Placeholder Image" style="margin-left: 15px;" width="300" height="227">
+<p><strong>[7]</strong> Charles-Étienne Joseph<span>*</span>, <strong>Benjamin Thérien</strong><span>*</span>, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky. <a href="https://arxiv.org/abs/2305.10210">[Learning Optimizers for Local SGD](https://openreview.net/forum?id=HiPe4SjZMs)</a>. In International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS 2023.</p>
+</div>
+<be>
+
 <!-- First publication with image on the left -->
 <div style="display: flex; align-items: center;">
 <img src="{{ site.baseurl }}/images/cpt_im.png" alt="Placeholder Image" style="margin-right: 15px;" width="333" height="232">
@@ -21,7 +28,7 @@ I received by BSc in Computer Science from Concordia Univsersity, where I comple
 <!-- Second publication with image on the right -->
 <div style="display: flex; align-items: center; flex-direction: row-reverse;">
 <img src="{{ site.baseurl }}/images/rtmm.png" alt="Placeholder Image" style="margin-left: 15px;" width="333" height="126">
-<p><strong>[5]</strong> <strong>Benjamin Thérien</strong>, Chengjie Huang, Adrian Chow, Krzysztof Czarnecki. <a href="https://arxiv.org/abs/2305.10210">Object Re-Identification from Point Clouds</a>. (In submission)</p>
+<p><strong>[5]</strong> <strong>Benjamin Thérien</strong>, Chengjie Huang, Adrian Chow, Krzysztof Czarnecki. <a href="https://arxiv.org/abs/2305.10210">Object Re-Identification from Point Clouds</a>. In proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024.</p>
 </div>
 <br>
 
