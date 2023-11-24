@@ -14,7 +14,7 @@ I received by BSc in Computer Science from Concordia Univsersity, where I comple
 <!-- Second publication with image on the right -->
 <div style="display: flex; align-items: center; flex-direction: row-reverse;">
 <img src="{{ site.baseurl }}/images/local_l2o.png" alt="Placeholder Image" style="margin-left: 15px;" width="300" height="227">
-<p><strong>[7]</strong> Charles-Étienne Joseph<span>*</span>, <strong>Benjamin Thérien</strong><span>*</span>, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky. <a href="https://arxiv.org/abs/2305.10210">[Learning Optimizers for Local SGD](https://openreview.net/forum?id=HiPe4SjZMs)</a>. In International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS 2023.</p>
+<p><strong>[7]</strong> Charles-Étienne Joseph<span>*</span>, <strong>Benjamin Thérien</strong><span>*</span>, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky. <a href="https://openreview.net/forum?id=HiPe4SjZMs">Learning Optimizers for Local SGD</a>. In International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS 2023.</p>
 </div>
 <be>
 
