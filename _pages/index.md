@@ -4,13 +4,27 @@ title:
 permalink: /
 ---
 
-Hi! I'm a Ph.D. student at [Mila](https://mila.quebec/en/person/benjamintherien/) and Université de Montréal, advised by [Irina Rish](https://sites.google.com/view/irinarish/) and [Eugene Belilovsky](http://eugenium.github.io/Students/). I'm currently researching scalable and cost-effective pre-training algorithms for large-scale model development.
+Hi! I'm a Ph.D. student at [Mila](https://mila.quebec/en/person/benjamintherien/) and Université de Montréal, advised by [Irina Rish](https://sites.google.com/view/irinarish/) and [Eugene Belilovsky](http://eugenium.github.io/Students/). I'm currently researching efficient foundation model pre-training through two lenses: continual learning and meta-learning.
 
 I received my MMath in Computer Science from the University of Waterloo, where I was was a member of the [WISE Lab](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/) advised by [Krzysztof Czarnecki](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/people-profiles/krzysztof-czarnecki). My research focused on developing 3D computer vision algorithms for object re-identifiation from point clouds.
 
 I received by BSc in Computer Science from Concordia Univsersity, where I completed software engineering internships at [Accedian](https://accedian.com/) and [Morgan Stanley](https://www.morganstanley.com/). I also completed research internships in the CLaC Lab advised by [Sabine Bergler](http://users.encs.concordia.ca/~bergler/) and at Mila advised by [Eugene Belilovsky](http://eugenium.github.io/) and [Guy Wolf](http://guywolf.org/).
 
 ## Research Publications
+
+<div style="display: flex; align-items: center; flex-direction: row-reverse;">
+<img src="{{ site.baseurl }}/images/mu_lo.png" alt="Placeholder Image" style="margin-left: 15px;" width="316" height="275">
+<p><strong>[9]</strong> <strong>Benjamin Thérien</strong><span>*</span>, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky. <a href="https://arxiv.org/abs/2406.00153">μLO: Compute-Efficient Meta-Generalization of Learned Optimizers</a>. In Submission to NeurIPS 2024.</p>
+</div>
+<be>
+
+  
+<div style="display: flex; align-items: center;">
+<img src="{{ site.baseurl }}/images/sss.png" alt="Placeholder Image" style="margin-right: 15px;" width="340" height="105">
+<p><strong>[8]</strong> Adam Ibrahim<span>*</span>, <strong>Benjamin Thérien<span>*</span></strong>, Kshitij Gupta<span>*</span>, Mats Leon Richter, Quentin Anthony, Timothée Lesort, Eugene Belilovsky, and Irina Rish. <a href="https://arxiv.org/pdf/2403.08763">Simple and Scalable Strategies to Continually Pre-train Large Language Models</a> Published in Transactions on Machine Learning Research (06/2024)</p>
+</div>
+<be>
+
 <!-- Second publication with image on the right -->
 <div style="display: flex; align-items: center; flex-direction: row-reverse;">
 <img src="{{ site.baseurl }}/images/local_l2o.png" alt="Placeholder Image" style="margin-left: 15px;" width="300" height="227">
