@@ -14,7 +14,7 @@ I received by BSc in Computer Science from Concordia Univsersity, where I comple
 
 <div style="display: flex; align-items: center; flex-direction: row-reverse;">
 <img src="{{ site.baseurl }}/images/mu_lo.png" alt="Placeholder Image" style="margin-left: 15px;" width="316" height="275">
-<p><strong>[9]</strong> <strong>Benjamin Thérien</strong><span>*</span>, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky. <a href="https://arxiv.org/abs/2406.00153">μLO: Compute-Efficient Meta-Generalization of Learned Optimizers</a>. In Submission to NeurIPS 2024.</p>
+<p><strong>[9]</strong> <strong>Benjamin Thérien</strong>, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky. <a href="https://arxiv.org/abs/2406.00153">μLO: Compute-Efficient Meta-Generalization of Learned Optimizers</a>. In Submission to NeurIPS 2024.</p>
 </div>
 <be>
 
