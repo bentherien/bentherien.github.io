@@ -6,11 +6,11 @@ permalink: /
 
 Hi! I'm a Ph.D. student at [Mila](https://mila.quebec/en/person/benjamintherien/) and Université de Montréal, advised by [Irina Rish](https://sites.google.com/view/irinarish/) and [Eugene Belilovsky](http://eugenium.github.io/Students/). I'm currently researching efficient foundation model pre-training through two lenses: continual learning and meta-learning.
 
-I received my MMath in Computer Science from the University of Waterloo, where I was was a member of the [WISE Lab](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/) advised by [Krzysztof Czarnecki](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/people-profiles/krzysztof-czarnecki). My research focused on developing 3D computer vision algorithms for object re-identifiation from point clouds.
+I received my MMath in Computer Science from the University of Waterloo, where I was a member of the [WISE Lab](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/) advised by [Krzysztof Czarnecki](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/people-profiles/krzysztof-czarnecki). My research focused on developing 3D computer vision algorithms for object re-identification from point clouds.
 
-I received by BSc in Computer Science from Concordia Univsersity, where I completed software engineering internships at [Accedian](https://accedian.com/) and [Morgan Stanley](https://www.morganstanley.com/). I also completed research internships in the CLaC Lab advised by [Sabine Bergler](http://users.encs.concordia.ca/~bergler/) and at Mila advised by [Eugene Belilovsky](http://eugenium.github.io/) and [Guy Wolf](http://guywolf.org/).
+I received by BSc in Computer Science from Concordia University, where I completed software engineering internships at [Accedian](https://accedian.com/) and [Morgan Stanley](https://www.morganstanley.com/). I also completed research internships in the CLaC Lab advised by [Sabine Bergler](http://users.encs.concordia.ca/~bergler/) and at Mila advised by [Eugene Belilovsky](http://eugenium.github.io/) and [Guy Wolf](http://guywolf.org/).
 
-## Research Publications
+## Select Publications
 
 <div style="display: flex; align-items: center; flex-direction: row-reverse;">
 <img src="{{ site.baseurl }}/images/mu_lo.png" alt="Placeholder Image" style="margin-left: 15px;" width="316" height="275">
