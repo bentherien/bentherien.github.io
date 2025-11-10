@@ -4,75 +4,228 @@ title:
 permalink: /
 ---
 
-Hi! I'm a Ph.D. student at [Mila](https://mila.quebec/en/person/benjamintherien/) and Université de Montréal, advised by [Irina Rish](https://sites.google.com/view/irinarish/) and [Eugene Belilovsky](http://eugenium.github.io/Students/). I'm currently researching efficient foundation model pre-training through two lenses: continual learning and meta-learning.
+<style>
+.page {
+  font-family: 'arial', sans-serif; /* Change to your preferred font */
+  font-size: 16px; /* Adjust size */
+  line-height: 1.8; /* Adjust spacing */
+}
 
-I received my MMath in Computer Science from the University of Waterloo, where I was a member of the [WISE Lab](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/) advised by [Krzysztof Czarnecki](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/people-profiles/krzysztof-czarnecki). My research focused on developing 3D computer vision algorithms for object re-identification from point clouds.
+.container {
+  max-width: 1800px !important; /* Narrower content area = wider margins */
+  padding-left: 60px !important; /* Additional padding on left */
+  padding-right: 60px !important; /* Additional padding on right */
+}
 
-I received by BSc in Computer Science from Concordia University, where I completed software engineering internships at [Accedian](https://accedian.com/) and [Morgan Stanley](https://www.morganstanley.com/). I also completed research internships in the CLaC Lab advised by [Sabine Bergler](http://users.encs.concordia.ca/~bergler/) and at Mila advised by [Eugene Belilovsky](http://eugenium.github.io/) and [Guy Wolf](http://guywolf.org/).
+/* Profile/Avatar image size - Bigger! */
+.site-avatar {
+  width: 310px !important;
+  height: 310px !important;
+  float: left !important;
+  margin-right: 40px !important;
+  margin-top: 0 !important;
+}
 
-## Select Publications
+.site-avatar img {
+  width: 310px !important;
+  height: 310px !important;
+}
 
-<div style="display: flex; align-items: center; flex-direction: row-reverse;">
-<img src="{{ site.baseurl }}/images/mu_lo.png" alt="Placeholder Image" style="margin-left: 15px;" width="316" height="275">
-<p><strong>[9]</strong> <strong>Benjamin Thérien</strong>, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky. <a href="https://arxiv.org/abs/2406.00153">μLO: Compute-Efficient Meta-Generalization of Learned Optimizers</a>. In Submission to NeurIPS 2024.</p>
+/* Move name and affiliation to top */
+.site-info {
+  float: none !important;
+  margin-top: 0 !important;
+  text-align: left !important;
+  margin-bottom: 20px !important;
+}
+
+.site-name {
+  font-size: 36px !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  margin-bottom: 0 !important;
+}
+
+.site-description {
+  font-size: 18px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Custom header layout */
+.custom-header {
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.about-section {
+  margin-top: 20px;
+  clear: none;
+}
+</style>
+
+
+<a href="https://github.com/bentherien">
+<img src="assets/github.png" height="45" style="float:top; margin:5px"></a>
+<a href="https://scholar.google.com/citations?hl=en&user=RbO_ULYAAAAJ">
+<img src="assets/google_scholar.png" height="45" style="float:top; margin:5px"></a>
+<a href="https://www.linkedin.com/in/benjamintherien/">
+<img src="assets/linkedin.png" height="45" style="float:top; margin:5px"></a>
+<a href="https://x.com/benjamintherien">
+<img src="assets/x.png" height="45" style="float:top; margin:5px"></a>
+<a href="mailto:benjtherien@gmail.com">
+<img src="assets/gmail.png" height="45" style="float:top; margin:5px"></a>
+
+<div class="about-section">
+  <div style="font-size: 24px; margin-bottom: 15px;">About Me</div>
+  <div style="overflow: auto;">
+    Hi! I'm a Ph.D. student at <a href="https://mila.quebec/en/person/benjamintherien/">Mila</a> and Université de Montréal, advised by <a href="https://sites.google.com/view/irinarish/">Irina Rish</a> and <a href="http://eugenium.github.io/Students/">Eugene Belilovsky</a>. My research focuses on efficient foundation model pre-training through disributed optimization, meta-learning, and continual learning. Previously, I received my MMath in Computer Science from the University of Waterloo, where I was a member of the <a href="https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/">WISE Lab</a> advised by <a href="https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/people-profiles/krzysztof-czarnecki">Krzysztof Czarnecki</a>. My research focused on developing 3D computer vision algorithms for object re-identification from point clouds. Before that, I received by BSc in Computer Science from Concordia University, where I completed software engineering internships at <a href="https://accedian.com/">Accedian</a> and <a href="https://www.morganstanley.com/">Morgan Stanley</a>. I also completed research internships in the CLaC Lab advised by <a href="http://users.encs.concordia.ca/~bergler/">Sabine Bergler</a> and at Mila advised by <a href="http://eugenium.github.io/">Eugene Belilovsky</a> and <a href="http://guywolf.org/">Guy Wolf</a>.
+  </div>
 </div>
-<be>
 
-  
-<div style="display: flex; align-items: center;">
-<img src="{{ site.baseurl }}/images/sss.png" alt="Placeholder Image" style="margin-right: 15px;" width="340" height="105">
-<p><strong>[8]</strong> Adam Ibrahim<span>*</span>, <strong>Benjamin Thérien<span>*</span></strong>, Kshitij Gupta<span>*</span>, Mats Leon Richter, Quentin Anthony, Timothée Lesort, Eugene Belilovsky, and Irina Rish. <a href="https://arxiv.org/pdf/2403.08763">Simple and Scalable Strategies to Continually Pre-train Large Language Models</a> Published in Transactions on Machine Learning Research (06/2024)</p>
-</div>
-<be>
+<div style="clear: both; padding-top: 20px;"></div>
 
-<!-- Second publication with image on the right -->
-<div style="display: flex; align-items: center; flex-direction: row-reverse;">
-<img src="{{ site.baseurl }}/images/local_l2o.png" alt="Placeholder Image" style="margin-left: 15px;" width="300" height="227">
-<p><strong>[7]</strong> Charles-Étienne Joseph<span>*</span>, <strong>Benjamin Thérien</strong><span>*</span>, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky. <a href="https://openreview.net/forum?id=HiPe4SjZMs">Learning Optimizers for Local SGD</a>. In International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS 2023.</p>
-</div>
-<be>
 
-<!-- First publication with image on the left -->
-<div style="display: flex; align-items: center;">
-<img src="{{ site.baseurl }}/images/cpt_im.png" alt="Placeholder Image" style="margin-right: 15px;" width="333" height="232">
-<p><strong>[6]</strong> Kshitij Gupta<span>*</span>, <strong>Benjamin Thérien<span>*</span></strong>, Adam Ibrahim<span>*</span>, Mats Leon Richter, Quentin Anthony, Eugene Belilovsky, Timothée Lesort, and Irina Rish. <a href="https://arxiv.org/abs/2308.04014">Continual Pre-Training of Large Language Models: How to re-warm your model?</a> In Efficient Systems for Foundation Models Workshop at ICML 2023, Honolulu, USA.</p>
+<div style="text-align: left; font-size: 24px;">
+Selected Publications
 </div>
-<br>
+See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYAAAAJ) page for a complete list of publications.
 
-<!-- Second publication with image on the right -->
-<div style="display: flex; align-items: center; flex-direction: row-reverse;">
-<img src="{{ site.baseurl }}/images/rtmm.png" alt="Placeholder Image" style="margin-left: 15px;" width="333" height="126">
-<p><strong>[5]</strong> <strong>Benjamin Thérien</strong>, Chengjie Huang, Adrian Chow, Krzysztof Czarnecki. <a href="https://arxiv.org/abs/2305.10210">Object Re-Identification from Point Clouds</a>. In proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024.</p>
-</div>
-<br>
 
-<!-- Third publication with image on the left -->
-<div style="display: flex; align-items: center;">
-<img src="{{ site.baseurl }}/images/robustness_im.png" alt="Placeholder Image" style="margin-right: 15px;" width="312" height="160">
-<p><strong>[4]</strong> Luke Rowe<span>*</span>, <strong>Benjamin Thérien<span>*</span></strong>, Krzysztof Czarnecki, and Hongyang Zhang. <a href="https://arxiv.org/abs/2210.02577">An Exploration of Robustness to L-infinity and Spatial Perturbations and their Composition</a>. (ArXiv)</p>
-</div>
-<br>
 
-<!-- Fourth publication with image on the right -->
-<div style="display: flex; align-items: center; flex-direction: row-reverse;">
-<img src="{{ site.baseurl }}/images/itsc_im.png" alt="Placeholder Image" style="margin-left: 15px;" width="308" height="235">
-<p><strong>[3]</strong> Chengjie Huang, Van Duong Nguyen, Vahdat Abdelzad, Christopher Mannes, Luke Rowe, <strong>Benjamin Thérien</strong>, Rick Salay, Krzysztof Czarnecki. <a href="https://arxiv.org/abs/2209.14435">Out-of-Distribution Detection for LiDAR-based 3D Object Detection</a>.  In 2022 IEEE 25th International Conference on Intelligent Transportation Systems (ITSC).</p>
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/pylo.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
-<br>
+- **PyLO: Towards Accessible Learned Optimizers in PyTorch**<br/>
+Paul Janson`*`, **Benjamin Thérien`*`**, Quentin Anthony, Xiaolong Huang, Abhinav Moudgil, Eugene Belilovsky<br/>
+CODEML Workshop at the Forty-second International Conference on Machine Learning<br/>
+Full Paper In Submission to MLSys 2026<br/>
+[ArXiv](https://arxiv.org/pdf/2506.10315) | [OpenReview](https://openreview.net/forum?id=Anr8OmuNK5) | [Code](https://github.com/Belilovsky-Lab/pylo) | [Tweet Thread](https://x.com/benjamintherien/status/1934377825726865617?s=20)
 
-<!-- Fifth publication with image on the left -->
-<div style="display: flex; align-items: center;">
-<img src="{{ site.baseurl }}/images/psn_im.gif" alt="Placeholder Image" style="margin-right: 15px;" width="346" height="228">
-<p><strong>[2]</strong> (Oral: 4.2% of submissions) Shanel Gauthier<span>*</span>, <strong>Benjamin Thérien<span>*†</span></strong>, Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf. <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Gauthier_Parametric_Scattering_Networks_CVPR_2022_paper.html">Parametric Scattering Networks</a>. In proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022.</p>
+<div style="clear: both;"></div>
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/muloco.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
-<br>
 
-<!-- Sixth publication with image on the right -->
-<div style="display: flex; align-items: center; flex-direction: row-reverse;">
-<img src="{{ site.baseurl }}/images/measeval_im.png" alt="Placeholder Image" style="margin-left: 15px;" width="311" height="120">
-<p><strong>[1]</strong> <strong>Benjamin Therien</strong>, Parsa Bagherzadeh, and Sabine Bergler. <a href="https://aclanthology.org/2021.semeval-1.49/">CLaC-BP at SemEval-2021 Task 8 : SciBERT Plus Rules for MeasEval</a>. In Proceedings of the Fifteenth Workshop on Semantic Evaluation (SemEval-2021). Association for Computational Linguistics.</p>
+- **MuLoCo: Muon is a practical inner optimizer for DiLoCo**<br/>
+**Benjamin Thérien**, Xiaolong Huang, Irina Rish, Eugene Belilovsky<br/>
+ICML Workshop on Efficient Systems for Foundation Models (ES-FoMo), 2025<br/>
+Full Paper In Submission to MLSys 2026<br/>
+[ArXiv](https://arxiv.org/pdf/2505.23725) | [OpenReview](https://openreview.net/forum?id=HiPe4SjZMs) | [Tweet Thread](https://x.com/benjamintherien/status/1928439450100715627?s=20)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/mulo.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
-<br>
+- **μLO: Compute-Efficient Meta-Generalization of Learned Optimizers**<br/>
+**Benjamin Thérien**, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky<br/>
+(Oral) NeurIPS 2024 Workshop on Optimization for Machine Learning<br/>
+Full paper in submission to ICLR 2026<br/>
+[ArXiv](https://arxiv.org/abs/2406.00153) | [OpenReview](https://openreview.net/forum?id=LK9SPXbA05) | [Code](https://github.com/bentherien/mu_learned_optimization) | [Tweet Thread](https://x.com/benjamintherien/status/1865930463098847575?s=20)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/densebackprop.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+- **Dense Backpropagation Improves Routing for Sparsely-Gated Mixture-of-Experts**<br/>
+Ashwinee Panda, Vatsal Baherwani, Zain Sarwar, **Benjamin Thérien**, Stephen Rawls, Sambit Sahu, Tom Goldstein, Supriyo Chakraborty<br/>
+Advances in Neural Information Processing Systems (**NeurIPS**), 2025<br/>
+[ArXiv](https://arxiv.org/abs/2504.12463) | [OpenReview](https://openreview.net/forum?id=jTUIo4Kl6u) | [Code](https://anonymous.4open.science/r/default-moe-6C74/README.md)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/cptofmoe.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+- **Continual Pre-training of MoEs: How robust is your router?**<br/>
+**Benjamin Thérien**, Charles-Étienne Joseph, Zain Sarwar, Ashwinee Panda, Anirban Das, Shi-Xiong Zhang, Stephen Rawls, Sambit Sahu, Eugene Belilovsky, Irina Rish<br/>
+Transactions on Machine Learning Research (**TMLR**), 2025<br/>
+[ArXiv](https://arxiv.org/abs/2503.05029) | [OpenReview](https://openreview.net/forum?id=dR7C1K71Rs) | [Tweet Thread](https://x.com/benjamintherien/status/1899909751049277668?s=20)
+
+
+
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/sss.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+- **Simple and Scalable Strategies to Continually Pre-train Large Language Models**<br/>
+Adam Ibrahim`*`, **Benjamin Thérien`*`**, Kshitij Gupta`*`, Mats Leon Richter, Quentin Anthony, Timothée Lesort, Eugene Belilovsky, Irina Rish<br/>
+Transactions on Machine Learning Research (**TMLR**), 2024<br/>
+[ArXiv](https://arxiv.org/pdf/2403.08763) | [OpenReview](https://openreview.net/forum?id=DimPeeCxKO) | [Code](https://github.com/EleutherAI/gpt-neox/pull/1200) | [Tweet Thread](https://x.com/benjamintherien/status/1768275963190640786?s=20) | [Video](https://youtu.be/y4sUn3sYWFc)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/local_l2o.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+- **Meta-learning Optimizers for Communication-Efficient Learning**<br/>
+Charles-Étienne Joseph`*`, **Benjamin Thérien**`*`, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky<br/>
+Transactions on Machine Learning Research (**TMLR**), 2024<br/>
+[ArXiv](https://arxiv.org/abs/2312.02204) | [OpenReview](https://openreview.net/forum?id=uRbf9ANAns) | [Code](https://github.com/lefameuxbeding/learned_aggregation)
+
+<div style="clear: both;"></div>
+
+<!-- - <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/cpt_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+**Continual Pre-Training of Large Language Models: How to re-warm your model?**<br/>
+Kshitij Gupta*, **Benjamin Thérien***, Adam Ibrahim*, Mats Leon Richter, Quentin Anthony, Eugene Belilovsky, Timothée Lesort, Irina Rish<br/>
+Efficient Systems for Foundation Models Workshop at **ICML** 2023<br/>
+[ArXiv](https://arxiv.org/abs/2308.04014)
+<div style="clear: both;"></div>-->
+
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/rtmm.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div> 
+
+- **Object Re-Identification from Point Clouds**<br/>
+**Benjamin Thérien**, Chengjie Huang, Adrian Chow, Krzysztof Czarnecki<br/>
+IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2024<br/>
+[WACV](https://openaccess.thecvf.com/content/WACV2024/html/Therien_Object_Re-Identification_From_Point_Clouds_WACV_2024_paper.html) | [ArXiv](https://arxiv.org/abs/2305.10210) | [Code](https://github.com/bentherien/point-cloud-reid)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/itsc_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+
+- **Out-of-Distribution Detection for LiDAR-based 3D Object Detection**<br/>
+Chengjie Huang, Van Duong Nguyen, Vahdat Abdelzad, Christopher Mannes, Luke Rowe, **Benjamin Thérien**, Rick Salay, Krzysztof Czarnecki<br/>
+IEEE 25th International Conference on Intelligent Transportation Systems (**ITSC**), 2022<br/>
+[ArXiv](https://arxiv.org/abs/2209.14435)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/psn_im.gif" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+- **(oral: 4.2% of submissions) Parametric Scattering Networks**<br/>
+Shanel Gauthier`*`, **Benjamin Thérien`*`†**], Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf<br/>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022<br/>
+[CVPR](https://openaccess.thecvf.com/content/CVPR2022/html/Gauthier_Parametric_Scattering_Networks_CVPR_2022_paper.html) | [ArXiv](https://arxiv.org/abs/2107.09539) | [Code](https://github.com/bentherien/parametricScatteringNetworks) | [Video](https://www.youtube.com/watch?v=-B0ErCjQ9Nk)
+
+<div style="clear: both;"></div>
+
+<!-- <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/measeval_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+- **CLaC-BP at SemEval-2021 Task 8 : SciBERT Plus Rules for MeasEval**<br/>
+**Benjamin Therien**, Parsa Bagherzadeh, Sabine Bergler<br/>
+Fifteenth Workshop on Semantic Evaluation (**SemEval**), 2021<br/>
+[acl](https://aclanthology.org/2021.semeval-1.49/)
+
+<div style="clear: both;"></div> -->
 
 ---
 <small>†: Oral presenter. *: Equal contribution.</small>
