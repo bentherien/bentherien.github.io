@@ -94,6 +94,36 @@ See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYA
 
 
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/covenant.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+- **Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet**<br/>
+Joel Lidin, Amir Sarfi, Erfan Miahi, Quentin Anthony, Shivam Chauhan, Evangelos Pappas, **Benjamin Thérien**, Eugene Belilovsky, Samuel Dare<br/>
+Preprint, 2025<br/>
+[ArXiv](https://arxiv.org/pdf/2603.08163) | [Tweet Thread](https://x.com/tplr_ai/status/2031388295972929720?s=20)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/muloco.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+- **MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo**<br/>
+**Benjamin Thérien**, Xiaolong Huang, Aaron Defazio, Irina Rish, Eugene Belilovsky<br/>
+International Conference on Machine Learning (**ICML**), 2026<br/>
+[ArXiv](https://arxiv.org/pdf/2505.23725) | [Project Page](https://bentherien.github.io/muloco-1/) | [Tweet Thread](https://x.com/benjamintherien/status/2026862326184304734?s=20)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/sparseloco.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+- **Communication Efficient LLM Pre-training with SparseLoCo**<br/>
+Amir Sarfi, **Benjamin Thérien**, Joel Lidin, Eugene Belilovsky<br/>
+International Conference on Machine Learning (**ICML**), 2026<br/>
+[ArXiv](https://arxiv.org/abs/2508.15706) | [Tweet Thread](https://x.com/amir_sarfi/status/1958714182750077215?s=20)
+
+<div style="clear: both;"></div>
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/pylo.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
 - **PyLO: Towards Accessible Learned Optimizers in PyTorch**<br/>
@@ -101,17 +131,6 @@ Paul Janson`*`, **Benjamin Thérien`*`**, Quentin Anthony, Xiaolong Huang, Abhin
 CODEML Workshop at the Forty-second International Conference on Machine Learning<br/>
 Full Paper In Submission to MLSys 2026<br/>
 [ArXiv](https://arxiv.org/pdf/2506.10315) | [OpenReview](https://openreview.net/forum?id=Anr8OmuNK5) | [Code](https://github.com/Belilovsky-Lab/pylo) | [Tweet Thread](https://x.com/benjamintherien/status/1934377825726865617?s=20)
-
-<div style="clear: both;"></div>
-<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
-  <img src="{{ site.baseurl }}/images/muloco.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
-</div>
-
-- **MuLoCo: Muon is a practical inner optimizer for DiLoCo**<br/>
-**Benjamin Thérien**, Xiaolong Huang, Irina Rish, Eugene Belilovsky<br/>
-ICML Workshop on Efficient Systems for Foundation Models (ES-FoMo), 2025<br/>
-Full Paper In Submission to MLSys 2026<br/>
-[ArXiv](https://arxiv.org/pdf/2505.23725) | [OpenReview](https://openreview.net/forum?id=HiPe4SjZMs) | [Tweet Thread](https://x.com/benjamintherien/status/1928439450100715627?s=20)
 
 <div style="clear: both;"></div>
 
