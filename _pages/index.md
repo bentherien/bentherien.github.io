@@ -138,7 +138,8 @@ Machine Learning and Systems (**MLSys**), 2026<br/>
 </div>
 - **μLO: Compute-Efficient Meta-Generalization of Learned Optimizers**<br/>
 **Benjamin Thérien**, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky<br/>
-(Oral) NeurIPS 2024 Workshop on Optimization for Machine Learning. International Conference on Learning Representations (**ICLR**), 2026<br/>
+(Oral) NeurIPS 2024 Workshop on Optimization for Machine Learning<br/>
+International Conference on Learning Representations (**ICLR**), 2026<br/>
 [ArXiv](https://arxiv.org/abs/2406.00153) | [OpenReview](https://openreview.net/forum?id=LK9SPXbA05) | [Code](https://github.com/bentherien/mu_learned_optimization) | [Tweet Thread](https://x.com/benjamintherien/status/1865930463098847575?s=20)
 
 <div style="clear: both;"></div>
