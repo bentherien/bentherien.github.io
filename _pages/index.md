@@ -98,7 +98,7 @@ See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYA
 </div>
 - **Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet**<br/>
 Joel Lidin, Amir Sarfi, Erfan Miahi, Quentin Anthony, Shivam Chauhan, Evangelos Pappas, **Benjamin Thérien**, Eugene Belilovsky, Samuel Dare<br/>
-Preprint, 2025<br/>
+Preprint<br/>
 [ArXiv](https://arxiv.org/pdf/2603.08163) | [Tweet Thread](https://x.com/tplr_ai/status/2031388295972929720?s=20)
 
 <div style="clear: both;"></div>
@@ -108,7 +108,7 @@ Preprint, 2025<br/>
 </div>
 - **MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo**<br/>
 **Benjamin Thérien**, Xiaolong Huang, Aaron Defazio, Irina Rish, Eugene Belilovsky<br/>
-International Conference on Machine Learning (**ICML**), 2026<br/>
+In Submission to International Conference on Machine Learning (**ICML**) 2026<br/>
 [ArXiv](https://arxiv.org/pdf/2505.23725) | [Project Page](https://bentherien.github.io/muloco-1/) | [Tweet Thread](https://x.com/benjamintherien/status/2026862326184304734?s=20)
 
 <div style="clear: both;"></div>
@@ -118,7 +118,7 @@ International Conference on Machine Learning (**ICML**), 2026<br/>
 </div>
 - **Communication Efficient LLM Pre-training with SparseLoCo**<br/>
 Amir Sarfi, **Benjamin Thérien**, Joel Lidin, Eugene Belilovsky<br/>
-International Conference on Machine Learning (**ICML**), 2026<br/>
+In Submission to International Conference on Machine Learning (**ICML**) 2026<br/>
 [ArXiv](https://arxiv.org/abs/2508.15706) | [Tweet Thread](https://x.com/amir_sarfi/status/1958714182750077215?s=20)
 
 <div style="clear: both;"></div>
@@ -128,8 +128,7 @@ International Conference on Machine Learning (**ICML**), 2026<br/>
 </div>
 - **PyLO: Towards Accessible Learned Optimizers in PyTorch**<br/>
 Paul Janson`*`, **Benjamin Thérien`*`**, Quentin Anthony, Xiaolong Huang, Abhinav Moudgil, Eugene Belilovsky<br/>
-CODEML Workshop at the Forty-second International Conference on Machine Learning<br/>
-Full Paper In Submission to MLSys 2026<br/>
+Machine Learning and Systems (**MLSys**), 2026<br/>
 [ArXiv](https://arxiv.org/pdf/2506.10315) | [OpenReview](https://openreview.net/forum?id=Anr8OmuNK5) | [Code](https://github.com/Belilovsky-Lab/pylo) | [Tweet Thread](https://x.com/benjamintherien/status/1934377825726865617?s=20)
 
 <div style="clear: both;"></div>
@@ -139,8 +138,7 @@ Full Paper In Submission to MLSys 2026<br/>
 </div>
 - **μLO: Compute-Efficient Meta-Generalization of Learned Optimizers**<br/>
 **Benjamin Thérien**, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky<br/>
-(Oral) NeurIPS 2024 Workshop on Optimization for Machine Learning<br/>
-Full paper in submission to ICLR 2026<br/>
+(Oral) NeurIPS 2024 Workshop on Optimization for Machine Learning; International Conference on Learning Representations (**ICLR**), 2026<br/>
 [ArXiv](https://arxiv.org/abs/2406.00153) | [OpenReview](https://openreview.net/forum?id=LK9SPXbA05) | [Code](https://github.com/bentherien/mu_learned_optimization) | [Tweet Thread](https://x.com/benjamintherien/status/1865930463098847575?s=20)
 
 <div style="clear: both;"></div>
