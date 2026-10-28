@@ -75,6 +75,8 @@ permalink: /
 <img src="assets/x.png" height="45" style="float:top; margin:5px"></a>
 <a href="mailto:benjtherien@gmail.com">
 <img src="assets/gmail.png" height="45" style="float:top; margin:5px"></a>
+<a href="assets/Benjamin_Therien_CV.pdf">
+<img src="assets/cv.png" height="45" alt="CV" title="CV" style="float:top; margin:5px"></a>
 
 <div class="about-section">
   <div style="font-size: 24px; margin-bottom: 15px;">About Me</div>
@@ -89,7 +91,7 @@ permalink: /
 <div style="text-align: left; font-size: 24px;">
 Selected Publications
 </div>
-See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYAAAAJ) page for a complete list of publications.
+See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYAAAAJ) page for a complete list of publications, or download my [CV](assets/Benjamin_Therien_CV.pdf).
 
 
 
