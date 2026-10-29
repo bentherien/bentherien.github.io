@@ -93,15 +93,15 @@ body:after {
 }
 
 .site-avatar {
-  width: 240px !important;
-  height: 240px !important;
+  width: 280px !important;
+  height: 280px !important;
   float: left !important;
   margin: 0 36px 0 0 !important;
 }
 
 .site-avatar img {
-  width: 240px !important;
-  height: 240px !important;
+  width: 280px !important;
+  height: 280px !important;
   border-radius: 12px !important;
 }
 
@@ -359,7 +359,7 @@ body:after {
   }
   .site-avatar,
   .site-avatar img {
-    width: min(240px, 100%) !important;
+    width: min(280px, 100%) !important;
     height: auto !important;
     aspect-ratio: 1;
   }
