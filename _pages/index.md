@@ -73,6 +73,12 @@ permalink: /
   .site-info {
     overflow: visible !important;
   }
+  .paper > div:first-child {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 0 12px 0 !important;
+    text-align: center !important;
+  }
 }
 
 .about-section {
@@ -89,10 +95,52 @@ permalink: /
 }
 
 .job-market {
-  margin-top: 20px;
-  padding: 12px 18px;
-  border-left: 4px solid #2a7ae2;
-  background-color: #eef4fc;
+  margin-top: 25px;
+  padding: 20px 26px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1f6fd1, #3b8cf0);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  box-shadow: 0 4px 14px rgba(31, 111, 209, 0.3);
+}
+
+.job-market-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.job-market a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Each paper is a card */
+.paper {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.paper:hover {
+  border-color: #b9d2f3;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.paper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.paper li strong:first-child {
+  font-size: 17px;
 }
 </style>
 
@@ -111,7 +159,8 @@ permalink: /
 <img src="assets/cv.png" height="45" alt="CV" title="CV" style="float:top; margin:5px"></a>
 
 <div class="job-market">
-<strong>I'm on the job market!</strong> I'm looking for model training positions in San Francisco. Feel free to reach out by <a href="mailto:benjtherien@gmail.com">email</a>.
+<div class="job-market-title">I'm on the job market!</div>
+I'm looking for model training positions in San Francisco. Feel free to reach out by <a href="mailto:benjtherien@gmail.com">email</a>.
 </div>
 
 <div style="clear: both; padding-top: 20px;"></div>
@@ -124,6 +173,7 @@ See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYA
 
 
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/replica_scaling.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -133,7 +183,9 @@ Preprint<br/>
 [ArXiv](https://arxiv.org/abs/2610.19064) | [Tweet Thread](https://x.com/benjamintherien/status/2112261120509538386?s=20)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/covenant.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -143,7 +195,9 @@ Preprint<br/>
 [ArXiv](https://arxiv.org/pdf/2603.08163) | [Tweet Thread](https://x.com/tplr_ai/status/2031388295972929720?s=20)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/muloco.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -153,7 +207,9 @@ In Submission to International Conference on Machine Learning (**ICML**) 2026<br
 [ArXiv](https://arxiv.org/pdf/2505.23725) | [Project Page](https://bentherien.github.io/muloco-1/) | [Tweet Thread](https://x.com/benjamintherien/status/2026862326184304734?s=20)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/sparseloco.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -163,7 +219,9 @@ In Submission to International Conference on Machine Learning (**ICML**) 2026<br
 [ArXiv](https://arxiv.org/abs/2508.15706) | [Tweet Thread](https://x.com/amir_sarfi/status/1958714182750077215?s=20)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/pylo.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -173,7 +231,9 @@ Machine Learning and Systems (**MLSys**), 2026<br/>
 [ArXiv](https://arxiv.org/pdf/2506.10315) | [OpenReview](https://openreview.net/forum?id=Anr8OmuNK5) | [Code](https://github.com/Belilovsky-Lab/pylo) | [Tweet Thread](https://x.com/benjamintherien/status/1934377825726865617?s=20)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/mulo.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -184,7 +244,9 @@ International Conference on Learning Representations (**ICLR**), 2026<br/>
 [ArXiv](https://arxiv.org/abs/2406.00153) | [OpenReview](https://openreview.net/forum?id=LK9SPXbA05) | [Code](https://github.com/bentherien/mu_learned_optimization) | [Tweet Thread](https://x.com/benjamintherien/status/1865930463098847575?s=20)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/densebackprop.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -194,7 +256,9 @@ Advances in Neural Information Processing Systems (**NeurIPS**), 2025<br/>
 [ArXiv](https://arxiv.org/abs/2504.12463) | [OpenReview](https://openreview.net/forum?id=jTUIo4Kl6u) | [Code](https://anonymous.4open.science/r/default-moe-6C74/README.md)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/cptofmoe.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -207,7 +271,9 @@ Transactions on Machine Learning Research (**TMLR**), 2025<br/>
 
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/sss.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -218,7 +284,9 @@ Transactions on Machine Learning Research (**TMLR**), 2024<br/>
 [ArXiv](https://arxiv.org/pdf/2403.08763) | [OpenReview](https://openreview.net/forum?id=DimPeeCxKO) | [Code](https://github.com/EleutherAI/gpt-neox/pull/1200) | [Tweet Thread](https://x.com/benjamintherien/status/1768275963190640786?s=20) | [Video](https://youtu.be/y4sUn3sYWFc)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/local_l2o.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -229,8 +297,10 @@ Transactions on Machine Learning Research (**TMLR**), 2024<br/>
 [ArXiv](https://arxiv.org/abs/2312.02204) | [OpenReview](https://openreview.net/forum?id=uRbf9ANAns) | [Code](https://github.com/lefameuxbeding/learned_aggregation)
 
 <div style="clear: both;"></div>
+</div>
 
-<!-- - <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+<!-- - <div class="paper" markdown="1">
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/cpt_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
 
@@ -238,9 +308,11 @@ Transactions on Machine Learning Research (**TMLR**), 2024<br/>
 Kshitij Gupta*, **Benjamin Thérien***, Adam Ibrahim*, Mats Leon Richter, Quentin Anthony, Eugene Belilovsky, Timothée Lesort, Irina Rish<br/>
 Efficient Systems for Foundation Models Workshop at **ICML** 2023<br/>
 [ArXiv](https://arxiv.org/abs/2308.04014)
-<div style="clear: both;"></div>-->
+<div style="clear: both;"></div>
+</div>-->
 
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/rtmm.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div> 
@@ -251,7 +323,9 @@ IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2024<b
 [WACV](https://openaccess.thecvf.com/content/WACV2024/html/Therien_Object_Re-Identification_From_Point_Clouds_WACV_2024_paper.html) | [ArXiv](https://arxiv.org/abs/2305.10210) | [Code](https://github.com/bentherien/point-cloud-reid)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/itsc_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -263,7 +337,9 @@ IEEE 25th International Conference on Intelligent Transportation Systems (**ITSC
 [ArXiv](https://arxiv.org/abs/2209.14435)
 
 <div style="clear: both;"></div>
+</div>
 
+<div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/psn_im.gif" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
@@ -274,8 +350,10 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022<
 [CVPR](https://openaccess.thecvf.com/content/CVPR2022/html/Gauthier_Parametric_Scattering_Networks_CVPR_2022_paper.html) | [ArXiv](https://arxiv.org/abs/2107.09539) | [Code](https://github.com/bentherien/parametricScatteringNetworks) | [Video](https://www.youtube.com/watch?v=-B0ErCjQ9Nk)
 
 <div style="clear: both;"></div>
+</div>
 
-<!-- <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+<!-- <div class="paper" markdown="1">
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/measeval_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
 </div>
 
@@ -284,7 +362,8 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022<
 Fifteenth Workshop on Semantic Evaluation (**SemEval**), 2021<br/>
 [acl](https://aclanthology.org/2021.semeval-1.49/)
 
-<div style="clear: both;"></div> -->
+<div style="clear: both;"></div>
+</div> -->
 
 ---
 <small>†: Oral presenter. *: Equal contribution.</small>
