@@ -426,6 +426,19 @@ I'm looking for model training positions in San Francisco.
 </div>
 
 <div class="paper" markdown="1">
+<div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/model_merging.webp" alt="Figure from Can Model Merging Improve Aggregation in DiLoCo?" loading="lazy" decoding="async"></div>
+<div class="paper-body" markdown="1">
+  <div class="pub-title" markdown="span">Can Model Merging Improve Aggregation in DiLoCo?</div>
+  <div class="pub-authors" markdown="span">Stefan Horoi, **Benjamin Thérien**, Guy Wolf, Eugene Belilovsky</div>
+  <div class="pub-venue" markdown="span">Advances in Neural Information Processing Systems (**NeurIPS**), 2026</div>
+  <div class="pub-links">
+    <a class="pub-link" href="https://arxiv.org/abs/2607.03011">ArXiv</a>
+    <a class="pub-link" href="https://github.com/shoroi/isoloco">Code</a>
+  </div>
+</div>
+</div>
+
+<div class="paper" markdown="1">
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/covenant.webp" alt="Figure from Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet" loading="lazy" decoding="async"></div>
 <div class="paper-body" markdown="1">
   <div class="pub-title" markdown="span">Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet</div>
@@ -443,7 +456,7 @@ I'm looking for model training positions in San Francisco.
 <div class="paper-body" markdown="1">
   <div class="pub-title" markdown="span">MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo</div>
   <div class="pub-authors" markdown="span">**Benjamin Thérien**, Xiaolong Huang, Aaron Defazio, Irina Rish, Eugene Belilovsky</div>
-  <div class="pub-venue" markdown="span">In Submission to International Conference on Machine Learning (**ICML**) 2026</div>
+  <div class="pub-venue" markdown="span">International Conference on Machine Learning (**ICML**), 2026</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2505.23725">ArXiv</a>
     <a class="pub-link" href="https://bentherien.github.io/muloco-1/">Project Page</a>
