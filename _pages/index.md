@@ -58,9 +58,41 @@ permalink: /
   overflow: auto;
 }
 
+/* About Me sits in the header, to the right of the photo */
+.site-info {
+  overflow: hidden !important;
+}
+
+/* On narrow screens, stack the photo above the bio */
+@media (max-width: 760px) {
+  .site-avatar {
+    float: none !important;
+    display: block;
+    margin: 0 auto 20px auto !important;
+  }
+  .site-info {
+    overflow: visible !important;
+  }
+}
+
 .about-section {
   margin-top: 20px;
   clear: none;
+  font-family: 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Keep each paper's text beside its image, even when the text is taller */
+.entry ul {
+  overflow: hidden;
+}
+
+.job-market {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border-left: 4px solid #2a7ae2;
+  background-color: #eef4fc;
 }
 </style>
 
@@ -78,11 +110,8 @@ permalink: /
 <a href="assets/Benjamin_Therien_CV.pdf">
 <img src="assets/cv.png" height="45" alt="CV" title="CV" style="float:top; margin:5px"></a>
 
-<div class="about-section">
-  <div style="font-size: 24px; margin-bottom: 15px;">About Me</div>
-  <div style="overflow: auto;">
-    Hi! I'm a Ph.D. student at <a href="https://mila.quebec/en/person/benjamintherien/">Mila</a> and Université de Montréal, advised by <a href="https://sites.google.com/view/irinarish/">Irina Rish</a> and <a href="http://eugenium.github.io/Students/">Eugene Belilovsky</a>. My research focuses on efficient foundation model pre-training through disributed optimization, meta-learning, and continual learning. Previously, I received my MMath in Computer Science from the University of Waterloo, where I was a member of the <a href="https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/">WISE Lab</a> advised by <a href="https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/people-profiles/krzysztof-czarnecki">Krzysztof Czarnecki</a>. My research focused on developing 3D computer vision algorithms for object re-identification from point clouds. Before that, I received by BSc in Computer Science from Concordia University, where I completed software engineering internships at <a href="https://accedian.com/">Accedian</a> and <a href="https://www.morganstanley.com/">Morgan Stanley</a>. I also completed research internships in the CLaC Lab advised by <a href="http://users.encs.concordia.ca/~bergler/">Sabine Bergler</a> and at Mila advised by <a href="http://eugenium.github.io/">Eugene Belilovsky</a> and <a href="http://guywolf.org/">Guy Wolf</a>.
-  </div>
+<div class="job-market">
+<strong>I'm on the job market!</strong> I'm looking for model training positions in San Francisco. Feel free to reach out by <a href="mailto:benjtherien@gmail.com">email</a>.
 </div>
 
 <div style="clear: both; padding-top: 20px;"></div>
@@ -94,6 +123,16 @@ Selected Publications
 See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYAAAAJ) page for a complete list of publications, or download my [CV](assets/Benjamin_Therien_CV.pdf).
 
 
+
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/replica_scaling.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+- **How Inner Optimizers Shape Replica Scaling**<br/>
+Eugene Belilovsky, Stefan Horoi, Edouard Oyallon, **Benjamin Thérien**<br/>
+Preprint<br/>
+[ArXiv](https://arxiv.org/abs/2610.19064) | [Tweet Thread](https://x.com/benjamintherien/status/2112261120509538386?s=20)
+
+<div style="clear: both;"></div>
 
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
   <img src="{{ site.baseurl }}/images/covenant.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
