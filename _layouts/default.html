@@ -7,15 +7,40 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon-64.png">
     {% if page.url == "/" %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link rel="preload" href="{{ site.baseurl }}/fonts/cmu/cmu-serif-500-roman.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Benjamin Thérien",
+        "url": "{{ site.url }}/",
+        "image": "{{ site.url }}{{ site.avatar }}",
+        "jobTitle": "PhD Student",
+        "affiliation": [
+          {"@type": "Organization", "name": "Mila"},
+          {"@type": "CollegeOrUniversity", "name": "Université de Montréal"}
+        ],
+        "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Waterloo"},
+        "knowsAbout": ["LLM pre-training", "Distributed optimization", "Learned optimizers", "Continual pre-training"],
+        "sameAs": [
+          "https://github.com/bentherien",
+          "https://scholar.google.com/citations?user=RbO_ULYAAAAJ",
+          "https://www.linkedin.com/in/benjamintherien/",
+          "https://x.com/benjamintherien"
+        ]
+      }
+    }
+    </script>
     {% endif %}
     {% include analytics_head.html %}
   </head>

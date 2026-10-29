@@ -6,7 +6,9 @@
 name: Benjamin Thérien
 
 # Name of the author
-author: Benjamin Thérien
+author:
+  name: Benjamin Thérien
+  twitter: benjamintherien
 
 # Short bio or description (displayed in the header)
 description: PhD student at Mila & Université de Montréal
@@ -48,8 +50,19 @@ google_analytics: UA-43339302-11
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.amitmerchant.com/reverie
-enforce_ssl: https://www.amitmerchant.com/reverie
+url: https://bentherien.github.io
+
+# Used by jekyll-seo-tag for link previews and structured data
+twitter:
+  username: benjamintherien
+  card: summary
+social:
+  name: Benjamin Thérien
+  links:
+    - https://github.com/bentherien
+    - https://scholar.google.com/citations?user=RbO_ULYAAAAJ
+    - https://www.linkedin.com/in/benjamintherien/
+    - https://x.com/benjamintherien
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
