@@ -5,10 +5,46 @@ permalink: /
 ---
 
 <style>
+/* Computer Modern (LaTeX) everywhere on the homepage */
+@font-face {
+  font-family: "CMU Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/cmu/cmu-serif-500-roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/cmu/cmu-serif-700-roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/cmu/cmu-serif-500-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/cmu/cmu-serif-700-italic.woff2") format("woff2");
+}
+
+body,
+.site-name,
+.site-description,
+.page,
+.page h1, .page h2, .page h3 {
+  font-family: "CMU Serif", "Latin Modern Roman", Georgia, serif !important;
+}
+
 .page {
-  font-family: 'arial', sans-serif; /* Change to your preferred font */
-  font-size: 16px; /* Adjust size */
-  line-height: 1.8; /* Adjust spacing */
+  font-size: 18px; /* Computer Modern runs small, so a bit larger than before */
+  line-height: 1.7;
 }
 
 .container {
@@ -41,6 +77,7 @@ permalink: /
 
 .site-name {
   font-size: 36px !important;
+  letter-spacing: normal !important;
   font-weight: bold !important;
   text-align: left !important;
   margin-bottom: 0 !important;
@@ -84,9 +121,8 @@ permalink: /
 .about-section {
   margin-top: 20px;
   clear: none;
-  font-family: 'arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* Keep each paper's text beside its image, even when the text is taller */
@@ -140,7 +176,7 @@ permalink: /
 }
 
 .paper li strong:first-child {
-  font-size: 17px;
+  font-size: 21px;
 }
 </style>
 
@@ -166,7 +202,7 @@ I'm looking for model training positions in San Francisco. Feel free to reach ou
 <div style="clear: both; padding-top: 20px;"></div>
 
 
-<div style="text-align: left; font-size: 24px;">
+<div style="text-align: left; font-size: 28px;">
 Selected Publications
 </div>
 See my [Google Scholar](https://scholar.google.com/citations?hl=en&user=RbO_ULYAAAAJ) page for a complete list of publications, or download my [CV](assets/Benjamin_Therien_CV.pdf).
