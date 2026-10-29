@@ -90,12 +90,15 @@ body:after {
   padding-top: 36px !important;
   padding-bottom: 8px !important;
   border-bottom: none !important;
+  display: flex;
+  align-items: center; /* centre the photo vertically against the name + bio */
 }
 
 .site-avatar {
+  flex: 0 0 280px;
   width: 280px !important;
   height: 280px !important;
-  float: left !important;
+  float: none !important;
   margin: 0 36px 0 0 !important;
 }
 
@@ -356,6 +359,8 @@ body:after {
   }
   .masthead {
     padding-top: 24px !important;
+    flex-direction: column;
+    align-items: stretch;
   }
   .site-avatar,
   .site-avatar img {
