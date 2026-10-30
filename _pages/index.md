@@ -374,14 +374,6 @@ body:after {
   white-space: nowrap;
 }
 
-/* Tagline under the name */
-.tagline {
-  margin: 0 0 10px;
-  font-size: 19px;
-  font-weight: bold;
-  color: var(--accent-dark);
-}
-
 /* Research-theme groups in the publication list */
 .pub-group {
   margin-top: 30px;
@@ -399,14 +391,6 @@ body:after {
   margin: 0 0 4px;
   font-size: 16px;
   color: var(--muted);
-}
-
-/* One-line takeaway under each paper */
-.pub-tldr {
-  margin-top: 6px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
 }
 
 .show-earlier-btn {
@@ -460,9 +444,6 @@ body:after {
     margin-top: 14px;
     font-size: 17px;
     line-height: 1.6;
-  }
-  .tagline {
-    font-size: 17px;
   }
   .bio-extra {
     display: none;
@@ -553,7 +534,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">How Inner Optimizers Shape Replica Scaling</div>
   <div class="pub-authors" markdown="span">Eugene Belilovsky, Stefan Horoi, Edouard Oyallon, **Benjamin Thérien**</div>
   <div class="pub-venue" markdown="span">Preprint</div>
-  <div class="pub-tldr">Identifies pseudo-gradient covariance and batch-size noise as what drives DiLoCo's loss as replicas grow, and shows whitening-based inner optimizers scale well from 8 to 96 replicas.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2610.19064">ArXiv</a>
     <a class="pub-link" href="https://x.com/benjamintherien/status/2112261120509538386?s=20">Tweet Thread</a>
@@ -567,7 +547,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Can Model Merging Improve Aggregation in DiLoCo?</div>
   <div class="pub-authors" markdown="span">Stefan Horoi, **Benjamin Thérien**, Guy Wolf, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">Advances in Neural Information Processing Systems (**NeurIPS**), 2026</div>
-  <div class="pub-tldr">Treats DiLoCo's aggregation step as model merging and introduces IsoLoCo, which outperforms DiLoCo by a margin that widens as the number of workers grows.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2607.03011">ArXiv</a>
     <a class="pub-link" href="https://github.com/shoroi/isoloco">Code</a>
@@ -581,7 +560,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet</div>
   <div class="pub-authors" markdown="span">Joel Lidin, Amir Sarfi, Erfan Miahi, Quentin Anthony, Shivam Chauhan, Evangelos Pappas, **Benjamin Thérien**, Eugene Belilovsky, Samuel Dare</div>
   <div class="pub-venue" markdown="span">Preprint</div>
-  <div class="pub-tldr">A 72B LLM pre-trained on about 1.1T tokens by open, permissionless peers using SparseLoCo: the largest collaborative globally distributed pre-training run, and competitive with centralized models.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2603.08163">ArXiv</a>
     <a class="pub-link" href="https://x.com/tplr_ai/status/2031388295972929720?s=20">Tweet Thread</a>
@@ -595,7 +573,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo</div>
   <div class="pub-authors" markdown="span">**Benjamin Thérien**, Xiaolong Huang, Aaron Defazio, Irina Rish, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">International Conference on Machine Learning (**ICML**), 2026</div>
-  <div class="pub-tldr">Muon as DiLoCo's inner optimizer beats AdamW-based DiLoCo at every scale from 150M to 3.1B parameters; at 15B, 16-worker MuLoCo nearly matches single-worker training.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2505.23725">ArXiv</a>
     <a class="pub-link" href="https://bentherien.github.io/muloco-1/">Project Page</a>
@@ -610,7 +587,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Communication Efficient LLM Pre-training with SparseLoCo</div>
   <div class="pub-authors" markdown="span">Amir Sarfi, **Benjamin Thérien**, Joel Lidin, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">In Submission to International Conference on Machine Learning (**ICML**) 2026</div>
-  <div class="pub-tldr">Top-k sparsification plus 2-bit quantization compresses pseudo-gradients by 97–99% while reaching lower loss than dense DiLoCo.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2508.15706">ArXiv</a>
     <a class="pub-link" href="https://x.com/amir_sarfi/status/1958714182750077215?s=20">Tweet Thread</a>
@@ -629,7 +605,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">PyLO: Towards Accessible Learned Optimizers in PyTorch</div>
   <div class="pub-authors" markdown="span">Paul Janson<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Quentin Anthony, Xiaolong Huang, Abhinav Moudgil, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">Machine Learning and Systems (**MLSys**), 2026</div>
-  <div class="pub-tldr">Brings learned optimizers such as VeLO to PyTorch through torch.optim, with CUDA kernels that raise ViT-B/16 training throughput roughly 4–5×.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2506.10315">ArXiv</a>
     <a class="pub-link" href="https://openreview.net/forum?id=Anr8OmuNK5">OpenReview</a>
@@ -646,7 +621,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-authors" markdown="span">**Benjamin Thérien**, Charles-Étienne Joseph, Boris Knyazev, Edouard Oyallon, Irina Rish, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">NeurIPS 2024 Workshop on Optimization for Machine Learning <span class="pub-badge">Oral</span></div>
   <div class="pub-venue" markdown="span">International Conference on Learning Representations (**ICLR**), 2026</div>
-  <div class="pub-tldr">Deriving μP for learned optimizers improves meta-generalization to wider and deeper networks and to training horizons 25× longer than seen in meta-training, at the same compute.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2406.00153">ArXiv</a>
     <a class="pub-link" href="https://openreview.net/forum?id=LK9SPXbA05">OpenReview</a>
@@ -662,7 +636,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Meta-learning Optimizers for Communication-Efficient Learning</div>
   <div class="pub-authors" markdown="span">Charles-Étienne Joseph<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">Transactions on Machine Learning Research (**TMLR**), 2024</div>
-  <div class="pub-tldr">Meta-learns the global update of local SGD, beating local-SGD variants while staying communication-efficient and generalizing to ImageNet, ViTs and language modeling.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2312.02204">ArXiv</a>
     <a class="pub-link" href="https://openreview.net/forum?id=uRbf9ANAns">OpenReview</a>
@@ -682,7 +655,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Dense Backpropagation Improves Routing for Sparsely-Gated Mixture-of-Experts</div>
   <div class="pub-authors" markdown="span">Ashwinee Panda, Vatsal Baherwani, Zain Sarwar, **Benjamin Thérien**, Stephen Rawls, Sambit Sahu, Tom Goldstein, Supriyo Chakraborty</div>
   <div class="pub-venue" markdown="span">Advances in Neural Information Processing Systems (**NeurIPS**), 2025</div>
-  <div class="pub-tldr">Gives the MoE router a dense gradient by filling in missing expert outputs with running averages, outperforming TopK routing with little overhead.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2504.12463">ArXiv</a>
     <a class="pub-link" href="https://openreview.net/forum?id=jTUIo4Kl6u">OpenReview</a>
@@ -697,7 +669,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Continual Pre-training of MoEs: How robust is your router?</div>
   <div class="pub-authors" markdown="span">**Benjamin Thérien**, Charles-Étienne Joseph, Zain Sarwar, Ashwinee Panda, Anirban Das, Shi-Xiong Zhang, Stephen Rawls, Sambit Sahu, Eugene Belilovsky, Irina Rish</div>
   <div class="pub-venue" markdown="span">Transactions on Machine Learning Research (**TMLR**), 2025</div>
-  <div class="pub-tldr">Across 600B-token runs, MoE routers stay robust to distribution shift during continual pre-training and match full re-training at a fraction of the cost.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2503.05029">ArXiv</a>
     <a class="pub-link" href="https://openreview.net/forum?id=dR7C1K71Rs">OpenReview</a>
@@ -712,7 +683,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Simple and Scalable Strategies to Continually Pre-train Large Language Models</div>
   <div class="pub-authors" markdown="span">Adam Ibrahim<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Kshitij Gupta<sup title="Equal contribution">*</sup>, Mats Leon Richter, Quentin Anthony, Timothée Lesort, Eugene Belilovsky, Irina Rish</div>
   <div class="pub-venue" markdown="span">Transactions on Machine Learning Research (**TMLR**), 2024</div>
-  <div class="pub-tldr">LR re-warming, re-decaying and replay match fully re-training LLMs up to 10B parameters, using a fraction of the compute.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2403.08763">ArXiv</a>
     <a class="pub-link" href="https://openreview.net/forum?id=DimPeeCxKO">OpenReview</a>
@@ -736,7 +706,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Object Re-Identification from Point Clouds</div>
   <div class="pub-authors" markdown="span">**Benjamin Thérien**, Chengjie Huang, Adrian Chow, Krzysztof Czarnecki</div>
   <div class="pub-venue" markdown="span">IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2024</div>
-  <div class="pub-tldr">The first large-scale study of object re-identification from LiDAR point clouds, reaching over 90% accuracy on rigid objects in real time.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://openaccess.thecvf.com/content/WACV2024/html/Therien_Object_Re-Identification_From_Point_Clouds_WACV_2024_paper.html">WACV</a>
     <a class="pub-link" href="https://arxiv.org/abs/2305.10210">ArXiv</a>
@@ -751,7 +720,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Out-of-Distribution Detection for LiDAR-based 3D Object Detection</div>
   <div class="pub-authors" markdown="span">Chengjie Huang, Van Duong Nguyen, Vahdat Abdelzad, Christopher Mannes, Luke Rowe, **Benjamin Thérien**, Rick Salay, Krzysztof Czarnecki</div>
   <div class="pub-venue" markdown="span">IEEE 25th International Conference on Intelligent Transportation Systems (**ITSC**), 2022</div>
-  <div class="pub-tldr">Adapts OOD detection methods to LiDAR 3D object detection and shows on KITTI that each method is biased toward particular OOD objects.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/abs/2209.14435">ArXiv</a>
   </div>
@@ -764,7 +732,6 @@ I'm looking for model training positions in San Francisco.
   <div class="pub-title" markdown="span">Parametric Scattering Networks</div>
   <div class="pub-authors" markdown="span">Shanel Gauthier<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf</div>
   <div class="pub-venue" markdown="span">IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022 <span class="pub-badge">Oral · 4.2% of submissions</span></div>
-  <div class="pub-tldr">Learning the scales, orientations and aspect ratios of Morlet wavelet filters gives significant gains over the standard scattering transform when labels are scarce.</div>
   <div class="pub-links">
     <a class="pub-link" href="https://openaccess.thecvf.com/content/CVPR2022/html/Gauthier_Parametric_Scattering_Networks_CVPR_2022_paper.html">CVPR</a>
     <a class="pub-link" href="https://arxiv.org/abs/2107.09539">ArXiv</a>
