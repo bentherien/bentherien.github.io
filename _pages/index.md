@@ -41,6 +41,13 @@ image: /images/avatar.jpg
 }
 
 /* Calibri, falling back to Carlito (a metric-compatible open clone) where Calibri isn't installed */
+/* Crisper text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body,
 .site-name,
 .site-description,
@@ -520,7 +527,7 @@ I'm looking for model training positions in San Francisco.
 </div>
 
 <h2 class="section-title">Selected Publications</h2>
-<p class="section-sub">See my <a href="https://scholar.google.com/citations?hl=en&amp;user=RbO_ULYAAAAJ">Google Scholar</a> page for a complete list of publications, or download my <a href="assets/Benjamin_Therien_CV.pdf">CV</a>. <span class="pub-legend">* Equal contribution. † Oral presenter.</span></p>
+<p class="section-sub">See my <a href="https://scholar.google.com/citations?hl=en&amp;user=RbO_ULYAAAAJ">Google Scholar</a> page for a complete list of publications, or download my <a href="assets/Benjamin_Therien_CV.pdf">CV</a>. <span class="pub-legend">* Equal contribution.</span></p>
 
 <div class="pub-group" markdown="1">
 <h3 class="group-title" id="distributed">Distributed &amp; communication-efficient pre-training</h3>
@@ -741,7 +748,7 @@ I'm looking for model training positions in San Francisco.
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/psn_im.webp" alt="Figure from Parametric Scattering Networks" loading="lazy" decoding="async"></div>
 <div class="paper-body" markdown="1">
   <div class="pub-title" markdown="span">Parametric Scattering Networks</div>
-  <div class="pub-authors" markdown="span">Shanel Gauthier<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>†**, Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf</div>
+  <div class="pub-authors" markdown="span">Shanel Gauthier<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf</div>
   <div class="pub-venue" markdown="span">IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022 <span class="pub-badge">Oral · 4.2% of submissions</span></div>
   <div class="pub-tldr">Learning the scales, orientations and aspect ratios of Morlet wavelet filters gives significant gains over the standard scattering transform when labels are scarce.</div>
   <div class="pub-links">
