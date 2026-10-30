@@ -103,18 +103,27 @@ body:after {
   align-items: center; /* centre the photo vertically against the name + bio */
 }
 
-.site-avatar {
+/* Left column: round photo with the link icons underneath */
+.avatar-col {
   flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-right: 40px;
+}
+
+.site-avatar {
   width: 280px !important;
   height: 280px !important;
   float: none !important;
-  margin: 0 36px 0 0 !important;
+  margin: 0 !important;
 }
 
 .site-avatar img {
   width: 280px !important;
   height: 280px !important;
-  border-radius: 12px !important;
+  border-radius: 50% !important;
 }
 
 .site-info {
@@ -143,39 +152,39 @@ body:after {
   color: var(--text);
 }
 
-/* Labelled link pills under the bio */
-.social-row {
+/* Icon links under the photo, in the link colour */
+.social-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 16px;
+  justify-content: center;
+  gap: 4px;
+  float: none !important; /* undo the theme's nav float and margins */
+  margin: 0 !important;
 }
 
-.social-row a {
+.social-icons a {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 5px 14px 5px 10px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background-color: #fff;
-  color: var(--text) !important;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1.4;
-  transition: border-color 0.15s, background-color 0.15s;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 !important;
+  border-radius: 50%;
+  color: var(--accent) !important;
+  transition: background-color 0.15s, color 0.15s;
 }
 
-.social-row a:hover {
-  border-color: var(--accent-border);
+.social-icons a:hover,
+.social-icons a:focus-visible {
   background-color: var(--accent-soft);
+  color: var(--accent-dark) !important;
   text-decoration: none;
 }
 
-.social-row img {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 /* Job-market banner */
@@ -417,8 +426,15 @@ body:after {
     align-items: center !important;
     padding-top: 20px !important;
   }
-  .site-info {
+  .site-info,
+  .avatar-col {
     display: contents;
+  }
+  .social-icons {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-content: flex-start;
+    margin: 4px 0 0 -9px !important;
   }
   .site-avatar,
   .site-avatar img {
@@ -440,6 +456,7 @@ body:after {
   }
   .about-section {
     grid-column: 1 / -1;
+    grid-row: 2;
     margin-top: 14px;
     font-size: 17px;
     line-height: 1.6;
@@ -449,9 +466,6 @@ body:after {
   }
   .bio-extra {
     display: none;
-  }
-  .social-row a {
-    padding: 9px 14px 9px 10px;
   }
   .job-market {
     padding: 16px 18px;
