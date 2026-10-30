@@ -1,7 +1,9 @@
 ---
 layout: page
-title: 
+title:
 permalink: /
+description: "Benjamin Thérien is a PhD student at Mila and Université de Montréal working on efficient LLM pre-training: distributed and communication-efficient optimization, learned optimizers, and continual pre-training. Previously at Google and Meta."
+image: /images/avatar.jpg
 ---
 
 <style>
@@ -39,6 +41,13 @@ permalink: /
 }
 
 /* Calibri, falling back to Carlito (a metric-compatible open clone) where Calibri isn't installed */
+/* Crisper text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body,
 .site-name,
 .site-description,
@@ -70,7 +79,7 @@ body,
 
 /* Narrower column so lines stay readable */
 .container {
-  max-width: 1080px !important;
+  max-width: 960px !important;
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
@@ -94,12 +103,21 @@ body:after {
   align-items: center; /* centre the photo vertically against the name + bio */
 }
 
-.site-avatar {
+/* Left column: photo with the link icons underneath */
+.avatar-col {
   flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-right: 40px;
+}
+
+.site-avatar {
   width: 280px !important;
   height: 280px !important;
   float: none !important;
-  margin: 0 36px 0 0 !important;
+  margin: 0 !important;
 }
 
 .site-avatar img {
@@ -134,39 +152,39 @@ body:after {
   color: var(--text);
 }
 
-/* Labelled link pills under the bio */
-.social-row {
+/* Icon links under the photo, in the link colour */
+.social-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 16px;
+  justify-content: center;
+  gap: 4px;
+  float: none !important; /* undo the theme's nav float and margins */
+  margin: 0 !important;
 }
 
-.social-row a {
+.social-icons a {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 5px 14px 5px 10px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background-color: #fff;
-  color: var(--text) !important;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1.4;
-  transition: border-color 0.15s, background-color 0.15s;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 !important;
+  border-radius: 50%;
+  color: var(--accent) !important;
+  transition: background-color 0.15s, color 0.15s;
 }
 
-.social-row a:hover {
-  border-color: var(--accent-border);
+.social-icons a:hover,
+.social-icons a:focus-visible {
   background-color: var(--accent-soft);
+  color: var(--accent-dark) !important;
   text-decoration: none;
 }
 
-.social-row img {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 /* Job-market banner */
@@ -186,11 +204,18 @@ body:after {
   margin-bottom: 2px;
 }
 
+.job-market {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 24px;
+}
+
 .job-market-cta {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 14px;
 }
 
 .job-market a.jm-btn {
@@ -345,72 +370,159 @@ body:after {
   text-decoration: none;
 }
 
-.pub-legend {
-  margin-top: 28px;
-  font-size: 14px;
+/* Research-theme groups in the publication list */
+.pub-group {
+  margin-top: 30px;
+}
+
+.group-title {
+  font-size: 22px !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  color: var(--text);
+  margin: 0 0 2px !important;
+}
+
+.group-desc {
+  margin: 0 0 4px;
+  font-size: 16px;
   color: var(--muted);
 }
 
-/* Phones: stack everything and use the full width */
+.show-earlier-btn {
+  display: none;
+}
+
+/* Phones: compact header so the job banner fits in the first screen; cards stack; earlier work collapses */
 @media (max-width: 760px) {
   .container {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
   .masthead {
-    padding-top: 24px !important;
-    flex-direction: column;
-    align-items: stretch;
+    display: grid !important;
+    grid-template-columns: 96px minmax(0, 1fr);
+    column-gap: 16px;
+    align-items: center !important;
+    padding-top: 20px !important;
+  }
+  .site-info,
+  .avatar-col {
+    display: contents;
+  }
+  .social-icons {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-content: flex-start;
+    margin: 4px 0 0 -9px !important;
   }
   .site-avatar,
   .site-avatar img {
-    width: min(280px, 100%) !important;
-    height: auto !important;
-    aspect-ratio: 1;
+    width: 96px !important;
+    height: 96px !important;
+    border-radius: 10px !important;
   }
   .site-avatar {
-    float: none !important;
-    display: block;
-    margin: 0 auto 20px auto !important;
-  }
-  .site-info {
-    overflow: visible !important;
+    flex: none;
+    margin: 0 !important;
+    grid-column: 1;
+    grid-row: 1;
   }
   .site-name {
-    font-size: 32px !important;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 30px !important;
+    line-height: 1.15;
+  }
+  .about-section {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .bio-extra {
+    display: none;
+  }
+  .job-market {
+    padding: 16px 18px;
+    font-size: 17px;
+  }
+  .job-market-title {
+    font-size: 20px;
+  }
+  .job-market a.jm-btn {
+    padding: 10px 18px;
+  }
+  .section-title {
+    margin-top: 32px !important;
+  }
+  .group-title {
+    font-size: 20px !important;
   }
   .paper {
     flex-direction: column;
-    gap: 12px;
-    padding: 16px;
+    gap: 10px;
+    padding: 14px;
   }
   .pub-thumb {
     flex-basis: auto;
     width: 100%;
-    height: 180px;
+    height: 150px;
+  }
+  .pub-title {
+    font-size: 19px;
+  }
+  .pub-badge {
+    margin-left: 0;
   }
   .pub-link {
-    padding: 6px 14px;
+    padding: 9px 16px;
     font-size: 15px;
   }
   .pub-links {
     gap: 10px;
+  }
+  .js .pub-group-earlier:not(.open) {
+    display: none;
+  }
+  .js .show-earlier-btn {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    border: 1px solid var(--accent-border);
+    border-radius: 999px;
+    background-color: var(--accent-soft);
+    color: var(--accent-dark);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .show-earlier-btn[hidden] {
+    display: none !important;
   }
 }
 </style>
 
 
 <div class="job-market">
+<div class="job-market-text">
 <div class="job-market-title">I'm on the job market!</div>
 I'm looking for model training positions in San Francisco.
+</div>
 <div class="job-market-cta">
 <a class="jm-btn" href="mailto:benjtherien@gmail.com">Email me</a>
-<a class="jm-btn ghost" href="assets/Benjamin_Therien_CV.pdf">Download CV (PDF)</a>
+<a class="jm-btn ghost" href="assets/Benjamin_Therien_CV.pdf">CV (PDF, updated Nov 2026)</a>
 </div>
 </div>
 
 <h2 class="section-title">Selected Publications</h2>
 <p class="section-sub">See my <a href="https://scholar.google.com/citations?hl=en&amp;user=RbO_ULYAAAAJ">Google Scholar</a> page for a complete list of publications, or download my <a href="assets/Benjamin_Therien_CV.pdf">CV</a>.</p>
+
+<div class="pub-group" markdown="1">
+<h3 class="group-title" id="distributed">Distributed &amp; communication-efficient pre-training</h3>
+<p class="group-desc">Training LLMs across many workers and data centres with far less communication.</p>
 
 <div class="paper" markdown="1">
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/replica_scaling.webp" alt="Figure from How Inner Optimizers Shape Replica Scaling" loading="lazy" decoding="async"></div>
@@ -477,12 +589,17 @@ I'm looking for model training positions in San Francisco.
   </div>
 </div>
 </div>
+</div>
+
+<div class="pub-group" markdown="1">
+<h3 class="group-title" id="learned-optimizers">Learned optimizers</h3>
+<p class="group-desc">Meta-learned optimizers that generalize to larger models and are practical to use.</p>
 
 <div class="paper" markdown="1">
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/pylo.webp" alt="Figure from PyLO: Towards Accessible Learned Optimizers in PyTorch" loading="lazy" decoding="async"></div>
 <div class="paper-body" markdown="1">
   <div class="pub-title" markdown="span">PyLO: Towards Accessible Learned Optimizers in PyTorch</div>
-  <div class="pub-authors" markdown="span">Paul Janson<sup>*</sup>, **Benjamin Thérien<sup>*</sup>**, Quentin Anthony, Xiaolong Huang, Abhinav Moudgil, Eugene Belilovsky</div>
+  <div class="pub-authors" markdown="span">Paul Janson<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Quentin Anthony, Xiaolong Huang, Abhinav Moudgil, Eugene Belilovsky</div>
   <div class="pub-venue" markdown="span">Machine Learning and Systems (**MLSys**), 2026</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2506.10315">ArXiv</a>
@@ -508,6 +625,25 @@ I'm looking for model training positions in San Francisco.
   </div>
 </div>
 </div>
+
+<div class="paper" markdown="1">
+<div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/local_l2o.webp" alt="Figure from Meta-learning Optimizers for Communication-Efficient Learning" loading="lazy" decoding="async"></div>
+<div class="paper-body" markdown="1">
+  <div class="pub-title" markdown="span">Meta-learning Optimizers for Communication-Efficient Learning</div>
+  <div class="pub-authors" markdown="span">Charles-Étienne Joseph<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky</div>
+  <div class="pub-venue" markdown="span">Transactions on Machine Learning Research (**TMLR**), 2024</div>
+  <div class="pub-links">
+    <a class="pub-link" href="https://arxiv.org/abs/2312.02204">ArXiv</a>
+    <a class="pub-link" href="https://openreview.net/forum?id=uRbf9ANAns">OpenReview</a>
+    <a class="pub-link" href="https://github.com/lefameuxbeding/learned_aggregation">Code</a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="pub-group" markdown="1">
+<h3 class="group-title" id="continual">Continual pre-training &amp; mixture-of-experts</h3>
+<p class="group-desc">Updating LLMs with new data without re-training from scratch, and training better MoEs.</p>
 
 <div class="paper" markdown="1">
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/densebackprop.webp" alt="Figure from Dense Backpropagation Improves Routing for Sparsely-Gated Mixture-of-Experts" loading="lazy" decoding="async"></div>
@@ -541,7 +677,7 @@ I'm looking for model training positions in San Francisco.
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/sss.webp" alt="Figure from Simple and Scalable Strategies to Continually Pre-train Large Language Models" loading="lazy" decoding="async"></div>
 <div class="paper-body" markdown="1">
   <div class="pub-title" markdown="span">Simple and Scalable Strategies to Continually Pre-train Large Language Models</div>
-  <div class="pub-authors" markdown="span">Adam Ibrahim<sup>*</sup>, **Benjamin Thérien<sup>*</sup>**, Kshitij Gupta<sup>*</sup>, Mats Leon Richter, Quentin Anthony, Timothée Lesort, Eugene Belilovsky, Irina Rish</div>
+  <div class="pub-authors" markdown="span">Adam Ibrahim<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Kshitij Gupta<sup title="Equal contribution">*</sup>, Mats Leon Richter, Quentin Anthony, Timothée Lesort, Eugene Belilovsky, Irina Rish</div>
   <div class="pub-venue" markdown="span">Transactions on Machine Learning Research (**TMLR**), 2024</div>
   <div class="pub-links">
     <a class="pub-link" href="https://arxiv.org/pdf/2403.08763">ArXiv</a>
@@ -552,33 +688,13 @@ I'm looking for model training positions in San Francisco.
   </div>
 </div>
 </div>
-
-<div class="paper" markdown="1">
-<div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/local_l2o.webp" alt="Figure from Meta-learning Optimizers for Communication-Efficient Learning" loading="lazy" decoding="async"></div>
-<div class="paper-body" markdown="1">
-  <div class="pub-title" markdown="span">Meta-learning Optimizers for Communication-Efficient Learning</div>
-  <div class="pub-authors" markdown="span">Charles-Étienne Joseph<sup>*</sup>, **Benjamin Thérien<sup>*</sup>**, Abhinav Moudgil, Boris Knyazev, Eugene Belilovsky</div>
-  <div class="pub-venue" markdown="span">Transactions on Machine Learning Research (**TMLR**), 2024</div>
-  <div class="pub-links">
-    <a class="pub-link" href="https://arxiv.org/abs/2312.02204">ArXiv</a>
-    <a class="pub-link" href="https://openreview.net/forum?id=uRbf9ANAns">OpenReview</a>
-    <a class="pub-link" href="https://github.com/lefameuxbeding/learned_aggregation">Code</a>
-  </div>
-</div>
 </div>
 
-<!-- - <div class="paper" markdown="1">
-<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
-  <img src="{{ site.baseurl }}/images/cpt_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
-</div>
+<button type="button" class="show-earlier-btn" aria-expanded="false" aria-controls="earlier-group">Show 3 earlier papers (2022–2024)</button>
 
-**Continual Pre-Training of Large Language Models: How to re-warm your model?**<br/>
-Kshitij Gupta*, **Benjamin Thérien***, Adam Ibrahim*, Mats Leon Richter, Quentin Anthony, Eugene Belilovsky, Timothée Lesort, Irina Rish<br/>
-Efficient Systems for Foundation Models Workshop at **ICML** 2023<br/>
-[ArXiv](https://arxiv.org/abs/2308.04014)
-<div style="clear: both;"></div>
-</div>-->
-
+<div class="pub-group pub-group-earlier" id="earlier-group" markdown="1">
+<h3 class="group-title" id="earlier">Earlier work</h3>
+<p class="group-desc">3D computer vision and signal processing.</p>
 
 <div class="paper" markdown="1">
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/rtmm.webp" alt="Figure from Object Re-Identification from Point Clouds" loading="lazy" decoding="async"></div>
@@ -609,9 +725,9 @@ Efficient Systems for Foundation Models Workshop at **ICML** 2023<br/>
 <div class="paper" markdown="1">
 <div class="pub-thumb"><img src="{{ site.baseurl }}/images/thumbs/psn_im.webp" alt="Figure from Parametric Scattering Networks" loading="lazy" decoding="async"></div>
 <div class="paper-body" markdown="1">
-  <div class="pub-title" markdown="span">Parametric Scattering Networks <span class="pub-badge">Oral · 4.2% of submissions</span></div>
-  <div class="pub-authors" markdown="span">Shanel Gauthier<sup>*</sup>, **Benjamin Thérien<sup>*</sup>†**, Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf</div>
-  <div class="pub-venue" markdown="span">IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022</div>
+  <div class="pub-title" markdown="span">Parametric Scattering Networks</div>
+  <div class="pub-authors" markdown="span">Shanel Gauthier<sup title="Equal contribution">*</sup>, **Benjamin Thérien<sup title="Equal contribution">*</sup>**, Laurent Alsène-Racicot, Muawiz Chaudhary, Irina Rish, Eugene Belilovsky, Michael Eickenberg, Guy Wolf</div>
+  <div class="pub-venue" markdown="span">IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2022 <span class="pub-badge">Oral · 4.2% of submissions</span></div>
   <div class="pub-links">
     <a class="pub-link" href="https://openaccess.thecvf.com/content/CVPR2022/html/Gauthier_Parametric_Scattering_Networks_CVPR_2022_paper.html">CVPR</a>
     <a class="pub-link" href="https://arxiv.org/abs/2107.09539">ArXiv</a>
@@ -620,6 +736,19 @@ Efficient Systems for Foundation Models Workshop at **ICML** 2023<br/>
   </div>
 </div>
 </div>
+</div>
+
+<!-- - <div class="paper" markdown="1">
+<div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
+  <img src="{{ site.baseurl }}/images/cpt_im.png" style="max-height: 150px; border: 1px solid #ddd; padding: 5px; background-color: #f9f9f9;">
+</div>
+
+**Continual Pre-Training of Large Language Models: How to re-warm your model?**<br/>
+Kshitij Gupta*, **Benjamin Thérien***, Adam Ibrahim*, Mats Leon Richter, Quentin Anthony, Eugene Belilovsky, Timothée Lesort, Irina Rish<br/>
+Efficient Systems for Foundation Models Workshop at **ICML** 2023<br/>
+[ArXiv](https://arxiv.org/abs/2308.04014)
+<div style="clear: both;"></div>
+</div>-->
 
 <!-- <div class="paper" markdown="1">
 <div style="width: 25%; float: left; margin: 5px 25px 5px 5px; text-align: right;">
@@ -634,4 +763,17 @@ Fifteenth Workshop on Semantic Evaluation (**SemEval**), 2021<br/>
 <div style="clear: both;"></div>
 </div> -->
 
-<p class="pub-legend">†: Oral presenter. *: Equal contribution.</p>
+<script>
+  /* Phones: "Earlier work" starts collapsed behind a button. Without JS everything stays visible. */
+  (function () {
+    document.documentElement.classList.add("js");
+    var btn = document.querySelector(".show-earlier-btn");
+    var group = document.getElementById("earlier-group");
+    if (!btn || !group) return;
+    btn.addEventListener("click", function () {
+      group.classList.add("open");
+      btn.setAttribute("aria-expanded", "true");
+      btn.hidden = true;
+    });
+  })();
+</script>
