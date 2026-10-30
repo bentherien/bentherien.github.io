@@ -103,7 +103,7 @@ body:after {
   align-items: center; /* centre the photo vertically against the name + bio */
 }
 
-/* Left column: round photo with the link icons underneath */
+/* Left column: photo with the link icons underneath */
 .avatar-col {
   flex: 0 0 280px;
   display: flex;
@@ -123,7 +123,7 @@ body:after {
 .site-avatar img {
   width: 280px !important;
   height: 280px !important;
-  border-radius: 50% !important;
+  border-radius: 12px !important;
 }
 
 .site-info {
@@ -440,7 +440,7 @@ body:after {
   .site-avatar img {
     width: 96px !important;
     height: 96px !important;
-    border-radius: 50% !important;
+    border-radius: 10px !important;
   }
   .site-avatar {
     flex: none;
