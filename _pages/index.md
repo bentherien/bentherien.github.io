@@ -370,10 +370,6 @@ body:after {
   text-decoration: none;
 }
 
-.pub-legend {
-  white-space: nowrap;
-}
-
 /* Research-theme groups in the publication list */
 .pub-group {
   margin-top: 30px;
@@ -522,7 +518,7 @@ I'm looking for model training positions in San Francisco.
 </div>
 
 <h2 class="section-title">Selected Publications</h2>
-<p class="section-sub">See my <a href="https://scholar.google.com/citations?hl=en&amp;user=RbO_ULYAAAAJ">Google Scholar</a> page for a complete list of publications, or download my <a href="assets/Benjamin_Therien_CV.pdf">CV</a>. <span class="pub-legend">* Equal contribution.</span></p>
+<p class="section-sub">See my <a href="https://scholar.google.com/citations?hl=en&amp;user=RbO_ULYAAAAJ">Google Scholar</a> page for a complete list of publications, or download my <a href="assets/Benjamin_Therien_CV.pdf">CV</a>.</p>
 
 <div class="pub-group" markdown="1">
 <h3 class="group-title" id="distributed">Distributed &amp; communication-efficient pre-training</h3>
